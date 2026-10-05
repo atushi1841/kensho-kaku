@@ -16,6 +16,13 @@ Read-only MCP server exposing the kensho Japan X/Twitter sweepstakes dataset fro
 - Source: ken-kaku.com sweepstakes collection (additional to knshow, kenshou.club, cp.meikan)
 - No network, no API key, no account required
 
+## Data Source: Apify Store
+
+The underlying dataset is also available as a managed Apify Actor:
+
+- **kensho-sweep-mcp** — [https://apify.com/atushi1841/acts/kensho-sweep-mcp](https://apify.com/atushi1841/acts/kensho-sweep-mcp)
+  (Actor ID: `kjf9ZKQ5zWyOQxzvL`) — the parent sweepstakes dataset that includes ken-kaku.com observations
+
 ## Run
 
 ```bash
@@ -39,6 +46,26 @@ This MCP Connector follows the Kensho revenue sharing model:
 - 20% to Apify (platform fee)
 - PPE model continues for internal operations
 - Revenue generated from external queries via Apify MCP integration
+
+## Installation (Smithery)
+
+Install via Smithery registry:
+```bash
+smithery install @atushi1841/kensho-kaku
+```
+
+## More MCP Servers
+
+- **[kensho-kclub](https://github.com/atushi1841/kensho-kclub)** — kenshou.club sweepstakes data
+- **[kensho-kema](https://github.com/atushi1841/kensho-kema)** — ke-ma.net sweepstakes data  
+- **[kensho-sweep-mcp](https://github.com/atushi1841/kensho-sweep-mcp)** — Full pipeline sweepstakes data
+- **[japan-anime-figure-mcp](https://github.com/atushi1841/japan-anime-figure-mcp)** — Anime figure price comparison
+- **[tcg-price-japan](https://github.com/atushi1841/tcg-price-japan)** — TCG used-price trends
+
+## Apify Actors
+
+- **[Apify Store: kensho-sweep-mcp](https://apify.com/atushi1841/acts/kensho-sweep-mcp)** — Parent sweepstakes dataset
+- **[Apify Store: japan-anime-figure-price-data](https://apify.com/atushi1841/acts/japan-anime-figure-price-data)** — Anime figure prices
 
 ## Integration Notes
 
